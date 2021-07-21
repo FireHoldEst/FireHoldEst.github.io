@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+
+nav {
+    color: #111;
+    background-color: rgb(72, 1, 78);
+    padding: 30px;
+    font-family: 'Orbitron';
+    font-size: 2em;
+    font-weight: 900;
+}
+
+#name {
+    padding-left: 110px;
+}
+
+#tile-block {
+    display: grid;
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+
+.landing-area {
+    background-color: rgb(72, 1, 78);
+    margin: 0 auto;
+    display: flex;
+    height: 88.5vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#tile-id-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 40px 40px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Orbitron';
+    background-color: #222222;
+    text-decoration: none;
+    border: solid 3px rgb(0, 0, 0);
+    visibility: hidden;
+}
+
+#tile-id-1:hover {
+    color: #333333;
+    border-color: #333333;
+    background-color: #333333;
+    cursor: pointer;
+
+}
+
+.tile-container {
+    display: grid;
+    grid-gap: 30px;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+@media screen and (max-width: 700px) {
+    .tile-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #tile-id-1 {
+        width: 70%;
+        height: 70%;
+    }
+    
+    .tile-container {
+        grid-gap: 1px;
+    }
+    
+    #name {
+        padding-left: 10px;
+    }
+
+}
